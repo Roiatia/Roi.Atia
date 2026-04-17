@@ -1,0 +1,128 @@
+.hero-section {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    gap: 32px;
+    min-height: 78vh;
+}
+
+.hero-copy h1 {
+    font-size: clamp(2.8rem, 5vw, 5.2rem);
+    max-width: 12ch;
+}
+
+.hero-text {
+    max-width: 64ch;
+    margin: 20px 0 0;
+    font-size: 1.08rem;
+}
+
+.hero-supporting-text {
+    margin: 14px 0 0;
+    font-size: 0.96rem;
+}
+
+.hero-supporting-text strong {
+    color: var(--heading-text);
+    font-weight: 700;
+}
+
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 34px;
+}
+
+.stat-card {
+    padding: 18px;
+    border: 1px solid var(--surface-border);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.stat-card strong {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--heading-text);
+    font-size: 1rem;
+}
+
+.hero-panel {
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 480px;
+}
+
+.panel-glow {
+    position: absolute;
+    inset: 16% 10%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(121, 169, 255, 0.22) 0%, rgba(121, 169, 255, 0) 68%);
+    filter: blur(10px);
+}
+
+.hero-orbit {
+    position: absolute;
+    border: 1px dashed rgba(121, 169, 255, 0.25);
+    border-radius: 50%;
+}
+
+.orbit-one {
+    width: 360px;
+    height: 360px;
+    animation: spin 18s linear infinite;
+}
+
+.orbit-two {
+    width: 250px;
+    height: 250px;
+    animation: spin-reverse 14s linear infinite;
+}
+
+.hero-display {
+    position: relative;
+    z-index: 1;
+    width: min(100%, 400px);
+    border: 1px solid var(--surface-border);
+    border-radius: 28px;
+    background: var(--surface-strong);
+    box-shadow: var(--shadow-hover);
+    overflow: hidden;
+    transform: rotate(-4deg);
+}
+
+.display-topbar,
+.visual-topbar {
+    display: flex;
+    gap: 8px;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--surface-border);
+}
+
+.display-topbar span,
+.visual-topbar span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(121, 169, 255, 0.2);
+}
+
+.display-content {
+    padding: 28px;
+}
+
+.display-content h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    line-height: 1.15;
+    color: var(--heading-text);
+}
+
+.display-list {
+    margin: 22px 0 0;
+    padding-left: 18px;
+    color: var(--text-soft);
+    line-height: 1.8;
+}

@@ -1,0 +1,87 @@
+.contact-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 24px;
+    align-items: center;
+}
+
+.contact-panel {
+    min-height: 100%;
+}
+
+.contact-mail {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-size: clamp(1.3rem, 2.5vw, 2rem);
+    font-weight: 700;
+    color: var(--heading-text);
+}
+
+.main_card_circular {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+    padding: 24px;
+    border: 1px solid var(--surface-border);
+    border-radius: var(--radius-lg);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.social_circle {
+    width: 84px;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(180, 198, 220, 0.12);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease, background-color 0.35s ease;
+    box-shadow: 0 12px 22px rgba(16, 24, 40, 0.12);
+}
+
+.social_circle .icon_container {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.social_circle .icon_container img {
+    width: 100%;
+    height: auto;
+    filter: brightness(0) saturate(100%) drop-shadow(0 1px 1px rgba(255, 255, 255, 0.35));
+}
+
+.social_circle:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 22px 32px rgba(16, 24, 40, 0.18);
+    border-color: transparent;
+}
+
+.social_circle:hover .icon_container {
+    transform: scale(1.12);
+}
+
+.social_circle:hover .icon_container img {
+    filter: none;
+}
+
+.social_circle.github:hover {
+    background: #171b21;
+}
+
+.social_circle.linkedin:hover {
+    background: #005f91;
+}
+
+.social_circle.whatsapp:hover {
+    background: #1ea953;
+}
+
+.social_circle.email:hover {
+    background: #c9362a;
+}

@@ -1,0 +1,65 @@
+@media (max-width: 1080px) {
+    .hero-section,
+    .about-layout,
+    .project-slab,
+    .reverse-layout,
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .reverse-layout .project-visual,
+    .reverse-layout .project-details {
+        order: initial;
+    }
+
+    .skills-layout,
+    .hero-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero-copy h1 {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 760px) {
+    .page-shell {
+        width: min(calc(100% - 20px), var(--max-width));
+        padding-top: 14px;
+    }
+
+    .site-header {
+        position: static;
+        flex-direction: column;
+        border-radius: 26px;
+    }
+
+    .section-frame {
+        padding: 28px 20px;
+    }
+
+    .hero-section {
+        min-height: auto;
+    }
+
+    .hero-panel {
+        min-height: 360px;
+    }
+
+    .hero-stats,
+    .skills-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-bar {
+        gap: 6px;
+    }
+
+    .project-slab {
+        padding: 18px;
+    }
+
+    .project-visual {
+        min-height: 260px;
+    }
+}
