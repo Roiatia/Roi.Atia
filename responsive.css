@@ -23,6 +23,16 @@
 }
 
 @media (max-width: 760px) {
+    .entry-header {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .entry-dates {
+        white-space: normal;
+    }
+
+
     .page-shell {
         width: min(calc(100% - 20px), var(--max-width));
         padding-top: 14px;

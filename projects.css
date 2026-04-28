@@ -67,6 +67,20 @@
     height: calc(100% - 49px);
 }
 
+.visual-body--screenshot {
+    display: block;
+    padding: 0;
+    overflow: hidden;
+}
+
+.visual-body--screenshot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
 .visual-sidebar {
     border-right: 1px solid var(--surface-border);
     background: rgba(121, 169, 255, 0.06);
